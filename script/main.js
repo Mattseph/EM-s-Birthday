@@ -54,11 +54,11 @@ const animationTimeline = () => {
     tl.to(".container", 0.6, {
         visibility: "visible"
     })
-    .from(".one", 0.7, {
+    .from(".one", 1, {
         opacity: 0,
         y: 10
     })
-    .from(".two", 0.4, {
+    .from(".two", 0.5, {
         opacity: 0,
         y: 10
     })
@@ -76,12 +76,18 @@ const animationTimeline = () => {
             y: 10
         },
     "-=1")
-    .from(".three", 0.7, {
+    .from(".three", 0.5, {
         opacity: 0,
         y: 10
     })
+    .to(".three strong", 0.5, {
+        scale: 1,
+        x: 10,
+        backgroundColor: "rgb(0,99,87)",
+        color: "#fff",
+    })
     .to(".three",
-        0.7,
+        0.5,
         {
             opacity: 0,
             y: 10
@@ -97,15 +103,15 @@ const animationTimeline = () => {
     })
     .staggerTo(
         ".hbd-chatbox span",
-        1.5, {
+        1, {
             visibility: "visible",
         },
-        0.05
+        0.07
     )
     .to(".fake-btn", 0.1, {
-        backgroundColor: "rgb(127, 206, 248)",
+        backgroundColor: "rgb(24, 167, 150)",
     },
-    "+=4")
+    "+=1")
     .to(
         ".four",
         0.5, {
@@ -121,8 +127,8 @@ const animationTimeline = () => {
     .from(".idea-3", 0.7, ideaTextTrans)
     .to(".idea-3 strong", 0.5, {
         scale: 1.2,
-        x: 10,
-        backgroundColor: "rgb(21, 161, 237)",
+        x: 0,
+        backgroundColor: "rgb(0,99,87)",
         color: "#fff",
     })
     .to(".idea-3", 0.7, ideaTextTransLeave, "+=2.5")
@@ -140,6 +146,12 @@ const animationTimeline = () => {
         },
         "+=1.5"
     )
+    .to(".idea-5 strong", 0.5, {
+        scale: 1,
+        x: 0,
+        backgroundColor: "rgb(0,99,87)",
+        color: "#fff",
+    })
     .to(
         ".idea-5 span",
         0.7, {
@@ -179,7 +191,7 @@ const animationTimeline = () => {
     )
     .staggerFromTo(
         ".baloons img",
-        2.5, {
+        7, {
             opacity: 0.9,
             y: 1400,
         }, {
@@ -251,6 +263,7 @@ const animationTimeline = () => {
         },
         0.3
     )
+    
     .to(".six", 0.5, {
         opacity: 0,
         y: 30,

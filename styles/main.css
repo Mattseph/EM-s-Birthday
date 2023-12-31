@@ -39,7 +39,7 @@ div.nine {
 }
 
 .two {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: lighter;
 }
 
@@ -57,8 +57,9 @@ div.nine {
 }
 
 .text-box p {
+  font-size: 1.2rem;
   margin: 0;
-  text-align: left;
+  text-align: justify;
 }
 
 .text-box span {
@@ -66,7 +67,7 @@ div.nine {
 }
 
 .text-box .fake-btn {
-  background-color: rgb(21, 161, 237);
+  background-color: rgb(0,99,87);
   border-radius: 3px;
   bottom: -50px;
   color: #fff;
@@ -76,13 +77,13 @@ div.nine {
 }
 
 .five p {
-  font-size: 2rem;
+  font-size: 3rem;
   left: 0;
   position: absolute;
   right: 0;
 }
 
-.idea-3 strong {
+strong {
   border-radius: 3px;
   display: inline-block;
   padding: 3px 5px;
